@@ -19,22 +19,22 @@ const Location = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-800 mb-8">Nearby Attractions</h3>
             <div className="space-y-4">
-              {location?.nearbyAttractions?.map((attraction, index) => (
+              {location.nearbyAttractions.map((attraction, index) => (
                 <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-orange-600" />
-                    <span className="font-medium text-gray-800">{attraction?.name}</span>
+                    <MapPin className="h-5 w-5 text-yellow-600" />
+                    <span className="font-medium text-gray-800">{attraction.name}</span>
                   </div>
                   <div className="text-right text-sm text-gray-600">
-                    <div className="font-medium">{attraction?.distance}</div>
-                    <div>{attraction?.time}</div>
+                    <div className="font-medium">{attraction.distance}</div>
+                    <div>{attraction.time}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl p-8 text-white">
             <div className="text-center">
               <MapPin className="h-16 w-16 mx-auto mb-4 text-white/80" />
               <h3 className="text-2xl font-bold mb-4">Perfect Location</h3>
@@ -64,7 +64,7 @@ const Location = () => {
                 </div>
               </div>
               
-              <button className="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button className="bg-white text-yellow-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 View on Google Maps
               </button>
             </div>

@@ -3,7 +3,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 const Rooms = () => {
   const dispatch = useDispatch();
-  const rooms = useSelector(state => state?.rooms?.rooms);
+  const rooms = useSelector(state => state.rooms.rooms);
   
   return (
     <section id="rooms" className="py-20 bg-white">
@@ -17,7 +17,7 @@ const Rooms = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {rooms?.map((room) => (
+          {rooms.map((room) => (
             <div key={room.id} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative">
                 <img 
@@ -29,7 +29,7 @@ const Rooms = () => {
                   }}
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-2xl font-bold text-orange-600">₹{room.price}</span>
+                  <span className="text-2xl font-bold text-yellow-600">₹{room.price}</span>
                   <span className="text-gray-600">/night</span>
                 </div>
               </div>
@@ -39,8 +39,8 @@ const Rooms = () => {
                 
                 <div className="grid grid-cols-2 gap-4 mb-4 text-sm text-gray-600">
                   <div className="flex items-center space-x-2">
-                    <div className="w-4 h-4 bg-orange-100 rounded flex items-center justify-center">
-                      <div className="w-2 h-2 bg-orange-600 rounded"></div>
+                    <div className="w-4 h-4 bg-yellow-100 rounded flex items-center justify-center">
+                      <div className="w-2 h-2 bg-yellow-600 rounded"></div>
                     </div>
                     <span>{room.size}</span>
                   </div>
@@ -56,8 +56,8 @@ const Rooms = () => {
 
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
-                    {room?.amenities.map((amenity, index) => (
-                      <span key={index} className="bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm">
+                    {room.amenities.map((amenity, index) => (
+                      <span key={index} className="bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-sm">
                         {amenity}
                       </span>
                     ))}
@@ -66,7 +66,7 @@ const Rooms = () => {
 
                 <button
                   onClick={() => dispatch(setSelectedRoom(room))}
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-200"
+                  className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 rounded-lg font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all duration-200"
                 >
                   Book This Room
                 </button>
@@ -78,5 +78,4 @@ const Rooms = () => {
     </section>
   );
 };
-
 export default Rooms

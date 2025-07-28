@@ -13,42 +13,42 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-300">{hotel?.contact?.address}</p>
+                  <p className="text-gray-300">{hotel.contact.address}</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-300">{hotel?.contact?.phone}</p>
+                  <p className="text-gray-300">{hotel.contact.phone}</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-300">{hotel?.contact?.email}</p>
+                  <p className="text-gray-300">{hotel.contact.email}</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Website</h3>
-                  <p className="text-gray-300">{hotel?.contact?.website}</p>
+                  <p className="text-gray-300">{hotel.contact.website}</p>
                 </div>
               </div>
             </div>
@@ -61,27 +61,27 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 />
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 />
               </div>
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
               />
               <textarea
                 rows="4"
                 placeholder="Your Message"
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-200"
+                className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 rounded-lg font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all duration-200"
               >
                 Send Message
               </button>
@@ -92,5 +92,6 @@ const Contact = () => {
     </section>
   );
 };
+
 
 export default Contact
