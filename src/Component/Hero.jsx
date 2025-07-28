@@ -55,7 +55,7 @@ const Hero = () => {
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12 sm:py-20">
     <div className="text-white text-center lg:text-left">
       <div className="flex justify-center lg:justify-start items-center space-x-2 mb-4">
-        <MapPin className="h-5 w-5 text-orange-400" />
+        <MapPin className="h-6 w-6 text-orange-400" />
         <span className="text-sm">{hotel.location}</span>
       </div>
 
@@ -72,19 +72,19 @@ const Hero = () => {
 
       <div className="grid grid-cols-2 gap-4 text-sm justify-items-center sm:justify-items-start">
         <div className="flex items-center space-x-2">
-          <Building className="h-5 w-5 text-yellow-400" />
+          <Building className="h-8 w-8 text-yellow-400" />
           <span>Business Hotel</span>
         </div>
         <div className="flex items-center space-x-2">
-          <CarFront className="h-5 w-5 text-yellow-400" />
+          <CarFront className="h-8 w-8 text-yellow-400" />
           <span>Free Parking</span>
         </div>
         <div className="flex items-center space-x-2">
-          <Wifi className="h-5 w-5 text-yellow-400" />
+          <Wifi className="h-8 w-8 text-yellow-400" />
           <span>Free WiFi</span>
         </div>
         <div className="flex items-center space-x-2">
-          <Utensils className="h-5 w-5 text-yellow-400" />
+          <Utensils className="h-8 w-8 text-yellow-400" />
           <span>Multi-Cuisine</span>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Reviews from './Review';
 import Policies from './Policies';
 import Footer from './Footer';
 import Contact from './Contact';
+import InstallAppButton from '../InstallAppButton';
 
 const HotelApp = () => {
   return (
